@@ -63,7 +63,7 @@ To use this repository, you must follow these steps:
 3. Another issue that I am currently having is deploying my app to Heroku. I got an error along the lines of "the default language
    can not be detected. I solved this issue by making sure that I had a Procfile and requirements.txt before pushing to heroku master
  
-4. The second issue that I hadd with Heroku was that the CONFIG VARS that I inputted in Heroku was not the same as the ones in the code.
+4. The second issue that I had with Heroku was that the CONFIG VARS that I inputted in Heroku was not the same as the ones in the code.
    As a result Heroku kept crashing. By looking into the log I was able to find out where the error was occuring. Once I changed my VARS
    everything was dandy.
 
