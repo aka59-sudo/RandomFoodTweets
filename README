@@ -15,10 +15,10 @@ To use this repository, you must follow these steps:
 3. Install flask using the same process as above ([sudo] pip[3] install flask)
 4. Install python-dotenv using the same process as above ([sudo] pip[3] install python-dotenv)
 5. Add your secret keys (from step 2) by making a new root-level file called tweet.env and populating it as follows:
-    KEY=''
-    KEY_SECRET=''
-    TOKEN=''
-    TOKEN_SECRET=''
+    CONS_KEY = ''
+    CONS_SECRET = ''
+    ACCESS_TOK = ''
+    ACCESS_TOK_SEC = ''
 8. Run `python foodtweets.py`
 9. If on Cloud9, preview templates/index.html. This should successfully render the HTML!
 10. Sign up for heroku at heroku.com 
@@ -26,16 +26,15 @@ To use this repository, you must follow these steps:
 12. Go through the following steps:
     heroku login -i
     heroku create
-    git push heroku master
 13. Navigate to your newly-created heroku site!
 14. Add your secret keys (from tweety.env) by going to https://dashboard.heroku.com/apps
     and clicking into your app. Click on Settings, then scroll to "Config Vars." Click
     "Reveal Config Vars" and add the key value pairs for each variable in user_tweets.py
     Your config var key names should be:
-    KEY
-    KEY_SECRET
-    TOKEN
-    TOKEN_SECRET
+    CONS_KEY
+    CONS_SECRET
+    ACCESS_TOK
+    ACCESS_TOK_SEC
 15. Configure requirements.txt with all requirements needed to run your app. ["tweepy", "Flask", "python-dotenv"]
 16. Configure Procfile with the command needed to run your app. ["web: python foodtweets.py"]
 17. Go through the following steps:
@@ -60,6 +59,13 @@ To use this repository, you must follow these steps:
 2. The second technical issue that I came across occured when trying to output the respective URLs and actually have them 
    point to the right one. While using Flask and HTML, I overcame this issue by hardcoding the twitter URL into the "<a href>"
    tag while using Flask to fill in the last part.
+ 
+3. Another issue that I am currently having is deploying my app to Heroku. I got an error along the lines of "the default language
+   can not be detected. I solved this issue by making sure that I had a Procfile and requirements.txt before pushing to heroku master
+ 
+4. The second issue that I hadd with Heroku was that the CONFIG VARS that I inputted in Heroku was not the same as the ones in the code.
+   As a result Heroku kept crashing. By looking into the log I was able to find out where the error was occuring. Once I changed my VARS
+   everything was dandy.
 
 +-------------------------------------------------------------------------------------------------------+
                                             CURRENT ISSUES    
@@ -71,5 +77,4 @@ To use this repository, you must follow these steps:
    next to the accounts. I have some ideas about how I want to go about it but I have not been solid on the full details 
    #WorkInProgress
 
-3. Another issue that I am currently having is deploying my app to Heroku. I am not sure what is going on but I am getting
-   an error along the lines of a "default language can not be detected". 
+3. One issue that I know I would've been able to tackle with more time was adding the Spoonacular API and having the links to the recipes.
