@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Random Food Tweets</title>
+        <link rel="stylesheet" href="../static/foodstyle.css">
+    </head>
+    <body>
+        <h1>What's being said about: <u><i>{{ food }}</i></u><h1>
+        
+        <ol>
+            {% for i in range(0,len) %}
+                <li> <h3>{{ screen_name[i] }}</h3> Look at this user's <a href="https://twitter.com/{{ screen_name[i] }}"> profile </a><br><i>Posted at: {{ created_at[i] }}</i> <br> <i>Tweet:" {{ ftweet[i] }} "</i> <br> Open in <a href= "https://twitter.com/user/status/{{ source_url[i] }}">Twitter</a>  </li>
+            {% endfor %}
+        </ol>
+    </body>
+</html>

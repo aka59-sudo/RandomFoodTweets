@@ -1,0 +1,31 @@
+h1{
+     font-family: "Courier New";
+}
+
+h3{
+     font-family: "Papyrus";
+}
+
+
+body{
+    background-color: maroon;
+    text-align: center;
+}
+
+
+li{
+    color: gold;
+    background-color: darkslategray;
+    font-family: "Gabriola";
+    font-size: 25px;
+}
+ol{ 
+    font-size: 30px;
+    background-color: black;
+    text-align: left;
+}
+
+u{
+    color: gold;
+    font-size: 40px;
+}
