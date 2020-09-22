@@ -70,3 +70,6 @@ To use this repository, you must follow these steps:
 2. The second issue that I came across that I'm still trying to figure out is how to have the image of each user appear
    next to the accounts. I have some ideas about how I want to go about it but I have not been solid on the full details 
    #WorkInProgress
+
+3. Another issue that I am currently having is deploying my app to Heroku. I am not sure what is going on but I am getting
+   an error along the lines of a "default language can not be detected". 
