@@ -1,0 +1,8 @@
+# This file should contain ALL required packages and technologies that the app
+# needs to run correctly.
+# Heroku will parse this file to determine what packages and libraries it
+# needs to install.
+
+tweepy
+Flask
+python-dotenv
