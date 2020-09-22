@@ -74,7 +74,8 @@ To use this repository, you must follow these steps:
    into different documentation that might help me achieve what I'm looking for.
 
 2. The second issue that I came across that I'm still trying to figure out is how to have the image of each user appear
-   next to the accounts. I have some ideas about how I want to go about it but I have not been solid on the full details 
-   #WorkInProgress
+   next to the accounts. I'm thinking about using the tweepy method that gets the url of the image and then using an <img src> 
+   tag to display the image from the URL. #WorkInProgress
 
-3. One issue that I know I would've been able to tackle with more time was adding the Spoonacular API and having the links to the recipes.
+3. One issue that I know I would've been able to tackle with more time was adding the Spoonacular API and having the links point
+   to the respective recipes.
