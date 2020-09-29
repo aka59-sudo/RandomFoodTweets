@@ -32,9 +32,9 @@ app = flask.Flask(__name__)
 
 @app.route("/") #Python Decorator
 def index():
-    rands = random.randint(1,10)
+    rands = random.randint(1,11) - 1
     
-    foods = ["Lobster", "Crayfish", "Ziti", "Lasagna", "Quiche", "Mashed Potatoes", "Chicken Alfredo", "Brownies", "Chocolate", "Spaghetti", "Garlic Bread"]
+    foods = ["Lobster", "Ravioli", "Ziti", "Lasagna", "Donuts", "Mashed Potatoes", "Plantains", "Brownies", "Chocolate", "Spaghetti", "Rice"]
     
     #Twitter API
     
@@ -86,8 +86,9 @@ def index():
         foodReadyIn = foodReadyIn,
         foodServings = foodServings,
         foodURL = foodURL,
-        ingredients = ingredients
-        
+        ingredients = ingredients,
+        ingLen = len(ingredient)
+
         )
     
 
