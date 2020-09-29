@@ -5,18 +5,24 @@
     </head>
     <body>
         <h1>What's being said about: <u><i>{{ food }}</i></u><h1>
-        <div id="recipe">
-            <h3> <b>{{ foodTitle }} <//b>, {{ foodServings }} Servings, Ready In: {{ foodReadyIn }} Minutes</h3>
+    <div id="recipe">
+        <h3> <u><b>{{ foodTitle }} </b></u> <br> {{ foodServings }} Servings, Ready In: {{ foodReadyIn }} Minutes</h3>
+        <div id="ingredient">
+            INGREDIENTS    
             <ol>
                 {% for i in range(0,ingLen) %}
                     <li> {{ ingredients[i] }} </li>
                 {% endfor %}
             <ol>
         </div>
+        For more info click the <a href="{{ foodURL }}"> recipe </a>
+    </div>
+    <div id="tweets">
         <ol>
             {% for i in range(0,len) %}
                 <li> <h3>{{ screen_name[i] }}</h3> Look at this user's <a href="https://twitter.com/{{ screen_name[i] }}"> profile </a><br><i>Posted at: {{ created_at[i] }}</i> <br> <i>Tweet:" {{ ftweet[i] }} "</i> <br> Open in <a href= "https://twitter.com/user/status/{{ source_url[i] }}">Twitter</a>  </li>
             {% endfor %}
         </ol>
+    </div>
     </body>
 </html>

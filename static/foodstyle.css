@@ -6,20 +6,28 @@ h3{
      font-family: "Papyrus";
 }
 
-
 body{
     background-color: maroon;
     text-align: center;
 }
 
 
+#tweets{
+    width:75%;
+    border:1px solid black;
+    padding:1em;
+    margin:0 auto;
+}
+
 li{
+    border-radius: 25px;
     color: gold;
-    background-color: darkslategray;
     font-family: "Gabriola";
     font-size: 25px;
 }
+
 ol{ 
+    border-radius: 25px;
     font-size: 30px;
     background-color: black;
     text-align: left;
@@ -30,8 +38,18 @@ u{
     font-size: 40px;
 }
 
-#recipe{
+#ingredient{
+    width: 25%;
+    border-radius: 25px;
     text-align: center;
     background-color: black;
+    margin: 0 auto;
     color: gold;
+}
+
+#recipe{
+    width: 50%;
+    text-align: center;
+    background-color: darkslategray;
+    margin: 0 auto;
 }

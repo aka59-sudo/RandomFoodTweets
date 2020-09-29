@@ -87,7 +87,7 @@ def index():
         foodServings = foodServings,
         foodURL = foodURL,
         ingredients = ingredients,
-        ingLen = len(ingredient)
+        ingLen = len(ingredients)
 
         )
     
