@@ -5,6 +5,7 @@
     </head>
     <body>
         <h1>What's being said about: <u><i>{{ food }}</i></u><h1>
+        <img src="../static/{{ food }}.jpg"></li>
     <div id="recipe">
         <h3> <u><b>{{ foodTitle }} </b></u> <br> {{ foodServings }} Servings, Ready In: {{ foodReadyIn }} Minutes</h3>
         <div id="ingredient">
@@ -17,6 +18,9 @@
         </div>
         For more info click the <a href="{{ foodURL }}"> recipe </a>
     </div>
+    
+    <br><br><br>
+    
     <div id="tweets">
         <ol>
             {% for i in range(0,len) %}

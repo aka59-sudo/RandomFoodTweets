@@ -19,6 +19,7 @@ To use this repository, you must follow these steps:
     CONS_SECRET = ''
     ACCESS_TOK = ''
     ACCESS_TOK_SEC = ''
+    SPOONACULAR_KEY
 8. Run `python foodtweets.py`
 9. If on Cloud9, preview templates/index.html. This should successfully render the HTML!
 10. Sign up for heroku at heroku.com 
@@ -35,6 +36,7 @@ To use this repository, you must follow these steps:
     CONS_SECRET
     ACCESS_TOK
     ACCESS_TOK_SEC
+    SPOONACULAR_KEY
 15. Configure requirements.txt with all requirements needed to run your app. ["tweepy", "Flask", "python-dotenv"]
 16. Configure Procfile with the command needed to run your app. ["web: python foodtweets.py"]
 17. Go through the following steps:
@@ -66,16 +68,26 @@ To use this repository, you must follow these steps:
 4. The second issue that I had with Heroku was that the CONFIG VARS that I inputted in Heroku was not the same as the ones in the code.
    As a result Heroku kept crashing. By looking into the log I was able to find out where the error was occuring. Once I changed my VARS
    everything was dandy.
+  
+5. For some reason I just started getting blank pages while reloading. If the page does not load there is a possibility that the quota for 
+   your spoonacular api has been reached. If that's the case what a while in order to have it load again. At max it should take a day.
+
+6. I had issues referencing the pictures that I put in my static folder. I was able to solve this by making sure that when I reference pictures 
+   I make sure they are referenced from where they are located exactly.
+
+7. I had some issues when trying to use the spoonacular api in reference with the terminolgy. I fixed this issue by making sure that once I had 
+   the api link, I then just added the question mark along with the "api key =" in order to get the authentication working.
 
 +-------------------------------------------------------------------------------------------------------+
                                             CURRENT ISSUES    
                                             
 1. An issue that I still have is trying to have the CSS border the "<li>" tags the way I want it to. I've been looking
-   into different documentation that might help me achieve what I'm looking for.
+   into different documentation that might help me achieve what I'm looking for. I want the borders to rotate around the edges
+   of the li tags so I've been watching many videos regarding that. 
 
 2. The second issue that I came across that I'm still trying to figure out is how to have the image of each user appear
    next to the accounts. I'm thinking about using the tweepy method that gets the url of the image and then using an <img src> 
    tag to display the image from the URL. #WorkInProgress
 
-3. One issue that I know I would've been able to tackle with more time was adding the Spoonacular API and having the links point
-   to the respective recipes.
+3. One issue that I know I would've been able to tackle with more time was adding the Spoonacular API and having all the recipe links
+   associated with the query.
