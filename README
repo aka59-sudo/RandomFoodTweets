@@ -91,3 +91,13 @@ To use this repository, you must follow these steps:
 
 3. One issue that I know I would've been able to tackle with more time was adding the Spoonacular API and having all the recipe links
    associated with the query.
+   
++-------------------------------------------------------------------------------------------------------+
+                                        FURTHER IMPROVEMENTS
+                                        
+1. Some further improvements that I would've liked to accomplish on this project is to have everything be dynamic.
+
+2. Another improvement that I would've liked to get on is making sure that users were able to actually search on their
+   own things that they wanted to lookup rather than me hardcoding some variables
+   
+3. I would've also liked to have a history tab where users would've been able to see the things that they searched up before
